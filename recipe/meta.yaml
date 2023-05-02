@@ -12,47 +12,53 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 3
 
 requirements:
   host:
     - python =3.9
     - pip
   run:
+    - bottleneck =1.3
+    - cartopy =0.20
+    - cfgrib =0.9.9
+    - contextily =1.3
+    - dask =2023.3
+    - deprecation =2.1
+    - gdal =3.5
+    - geopandas =0.12
+    - h5py =3.7
+    - haversine =2.8
+    - matplotlib-base =3.3
+    - mccabe =0.6
+    - netcdf4 =1.6
+    - numba =0.56
+    - openpyxl =3.1
+    - overpy =0.6
+    - pandas =1.5
+    - pandas-datareader =0.10
+    - pathos =0.3
+    - peewee =3.16
+    - pint =0.20
+    - proj =9.0
+    - pycountry =22.3
+    - pyepsg =0.4
+    - pytables =3.7
     - python =3.9
-    - bottleneck
-    - cartopy
-    - cfgrib
-    - contextily
-    - dask-core
-    - deprecation
-    - geopandas
-    - h5py
-    - haversine
-    - matplotlib-base
-    - netcdf4
-    - numba
-    - openpyxl
-    - overpy
-    - pandas
-    - pandas-datareader
-    - pathos
-    - peewee
-    - pillow
-    - pint
-    - pycountry
-    - rasterio
-    - salib
-    - scikit-learn
-    - statsmodels
-    - sparse
-    - pytables
-    - tabulate
-    - tqdm
-    - xarray
-    - xlrd
-    - xlsxwriter
-    - xmlrunner
+    - pyxlsb =1.0
+    - rasterio =1.2
+    - requests =2.28
+    - salib =1.3
+    - scikit-learn =1.2
+    - scipy =1.10
+    - sparse =0.14
+    - statsmodels =0.13
+    - tabulate =0.9
+    - tqdm =4.65
+    - xarray =2023.2
+    - xlrd =2.0
+    - xlsxwriter =3.0
+    - xmlrunner =1.7
 
 test:
   imports:
