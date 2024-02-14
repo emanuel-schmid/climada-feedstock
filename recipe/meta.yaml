@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -42,9 +42,9 @@ requirements:
     - peewee =3.16
     - pillow =9.4
     - pint =0.22
-    - proj =9.1
     - pycountry =22.3
     - pyepsg =0.4
+    - pyproj =3.5
     - pytables =3.7
     - python =3.9
     - pyxlsb =1.0
@@ -62,6 +62,8 @@ requirements:
     - xlrd =2.0
     - xlsxwriter =3.1
     - xmlrunner =1.7
+    # TODO: Remove with next release
+    - xyzservices =2023.7  # Fix old version to avoid error on import
 
 test:
   imports:
