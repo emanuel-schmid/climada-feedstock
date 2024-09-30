@@ -25,7 +25,7 @@ requirements:
     - cartopy =0.22
     - cfgrib =0.9.9
     - contextily =1.5
-    - dask =2024.1
+    - dask =2024.8
     - deprecation =2.1
     - eccodes =2.27
     - gdal =3.6
