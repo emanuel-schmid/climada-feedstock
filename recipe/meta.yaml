@@ -16,7 +16,7 @@ build:
 
 requirements:
   host:
-    - python >=3.9,<3.12
+    - python >=3.9,<3.11.9
     - pip
     - setuptools-scm
   run:
@@ -25,8 +25,7 @@ requirements:
     - cartopy =0.22
     - cfgrib =0.9.9
     - contextily =1.5
-    - dask =2024.8
-    - dask-expr =1.1.10
+    - dask =2024.1
     - deprecation =2.1
     - eccodes =2.27
     - gdal =3.6
