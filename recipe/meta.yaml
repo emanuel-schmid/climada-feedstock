@@ -45,7 +45,6 @@ requirements:
     - pillow =9.4
     - pint =0.23
     - pycountry =22.3
-    - pyepsg =0.4
     - pyproj =3.5
     - pytables =3.7
     - python >=3.9,<3.12
