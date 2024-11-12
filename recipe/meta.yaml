@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -24,7 +24,8 @@ requirements:
     - cartopy =0.22
     - cfgrib =0.9.9
     - contextily =1.5
-    - dask =2024.1
+    - dask =2024.8
+    - dask-expr =1.1.10
     - deprecation =2.1
     - eccodes =2.27
     - gdal =3.6
@@ -44,7 +45,6 @@ requirements:
     - pillow =9.4
     - pint =0.23
     - pycountry =22.3
-    - pyepsg =0.4
     - pyproj =3.5
     - pytables =3.7
     - python >=3.9,<3.12
@@ -88,4 +88,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - emanuel-schmid
     - peanutfun
