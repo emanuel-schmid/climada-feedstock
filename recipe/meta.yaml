@@ -62,6 +62,7 @@ requirements:
     - xarray =2024.1
     - xlrd =2.0
     - xlsxwriter =3.1
+    - xmlrunner
 
 test:
   imports:
