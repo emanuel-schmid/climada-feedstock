@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 3
 
 requirements:
   host:
@@ -82,9 +82,11 @@ about:
   home: https://github.com/CLIMADA-project/climada_python
   summary: "CLIMADA: Probabilistic natural catastrophe impact model in Python"
   description: |
-    CLIMADA stands for CLIMate ADAptation and is a probabilistic natural catastrophe
-    impact model, that also calculates averted damage (benefit) thanks to adaptation
-    measures of any kind.
+    CLIMADA (CLIMate ADAptation) is a free and open-source software framework
+    for climate risk assessment and adaptation option appraisal. Designed by a
+    large scientific community, it helps reasearchers, policymakers, and
+    businesses analyse the impacts of natural hazards and explore adaptation
+    strategies. 
   license: GPL-3.0-only
   license_file: LICENSE
   doc_url: https://climada-python.readthedocs.io/en/stable/
