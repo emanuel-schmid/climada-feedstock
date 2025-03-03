@@ -21,6 +21,7 @@ requirements:
     - setuptools
     - setuptools-scm
   run:
+    - python >={{ python_min }},<3.12
     - bayesian-optimization =1.5
     - bottleneck =1.4
     - cartopy =0.24
@@ -49,7 +50,6 @@ requirements:
     - pycountry =24.6
     - pyproj =3.7
     - pytables =3.10
-    - python =3.11
     - pyxlsb =1.0
     - rasterio =1.4
     - requests =2.32
