@@ -45,7 +45,7 @@ requirements:
     - pandas-datareader =0.10
     - pathos =0.3
     - peewee =3.17
-    - pillow =11.1
+    - pillow =10.4
     - pint =0.24
     - pycountry =24.6
     - pyproj =3.7
