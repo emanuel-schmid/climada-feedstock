@@ -1,5 +1,5 @@
 {% set name = "climada" %}
-{% set version = "6.0.0" %}
+{% set version = "6.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/climada-{{ version }}.tar.gz
-  sha256: 8c3ee797470a974bf7f9d5c214e9be2348c08c7feaf4de30cee832e9b1ea0966
+  sha256: ea8ef811aaa167a9864a79c753d1423c5b660d92ba179b2bd788e51fd9bcca2f
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:

@@ -11,9 +11,11 @@ Summary: CLIMADA: Probabilistic natural catastrophe impact model in Python
 
 Documentation: https://climada-python.readthedocs.io/en/stable/
 
-CLIMADA stands for CLIMate ADAptation and is a probabilistic natural catastrophe
-impact model, that also calculates averted damage (benefit) thanks to adaptation
-measures of any kind.
+CLIMADA (CLIMate ADAptation) is a free and open-source software framework
+for climate risk assessment and adaptation option appraisal. Designed by a
+large scientific community, it helps reasearchers, policymakers, and
+businesses analyse the impacts of natural hazards and explore adaptation
+strategies.
 
 
 Current build status
