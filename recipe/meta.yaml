@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -29,7 +29,7 @@ requirements:
     - contextily =1.6
     - dask =2025.9
     - deprecation =2.1
-    - eccodes =2.41
+    - eccodes >=2.41
     - fiona =1.10
     - gdal =3.10
     - geopandas =1.1
