@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 3
 
 requirements:
   host:
@@ -43,7 +43,7 @@ requirements:
     - openpyxl =3.1
     - osm-flex =1.1
     - overpy =0.7
-    - pandas =2.1
+    - pandas =2.3
     - pathos =0.3
     - peewee =3.18
     - pillow >=10.4,<11.4
