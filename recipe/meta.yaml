@@ -22,6 +22,7 @@ requirements:
     - setuptools-scm
   run:
     - python >={{ python_min }},<3.13
+    - affine =2.4
     - bayesian-optimization =1.5
     - bottleneck =1.6
     - cartopy =0.25
