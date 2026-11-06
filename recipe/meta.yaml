@@ -1,5 +1,5 @@
 {% set name = "climada" %}
-{% set version = "6.1.0" %}
+{% set version = "6.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/climada-{{ version }}.tar.gz
-  sha256: cda2596f507c8da881a5371665ec1187eb5be90483204f365bb4e92f0614be95
+  sha256: 37ad507618c3a05bfab9e2ad77c96f8a7be22ca52ff06c1fcd11c22c079c2f07
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 4
+  number: 0
 
 requirements:
   host:
@@ -21,52 +21,52 @@ requirements:
     - setuptools
     - setuptools-scm
   run:
-    - python >={{ python_min }},<3.13
+    - python >={{ python_min }},<3.14
     - affine =2.4
     - bayesian-optimization =1.5
     - bottleneck =1.6
     - cartopy =0.25
     - cfgrib =0.9
-    - contextily =1.6
-    - dask =2025.9
+    - contextily =1.7
+    - dask =2026.8
     - deprecation =2.1
-    - eccodes >=2.41
+    - eccodes =2.47
     - fiona =1.10
-    - gdal =3.10
+    - gdal =3.12
     - geopandas =1.1
-    - h5py =3.13
+    - h5py =3.16
     - haversine =2.9
-    - lxml =6.0
     - matplotlib-base =3.10
     - netcdf4 =1.7
-    - numba =0.62
-    - numexpr =2.13
+    - numba =0.67
+    - numexpr =2.14
     - openpyxl =3.1
     - osm-flex =1.1
     - overpy =0.7
-    - pandas =2.3
+    - pandas =2.2
     - pathos =0.3
-    - peewee =3.18
-    - pillow >=10.4,<11.4
-    - pint =0.24
-    - pyarrow >=20.0,<21.1
+    - peewee =4.4
+    - pillow =13.0
+    - pint =0.25
+    - pyarrow =24.0
     - pycountry =24.6
     - pyproj =3.7
-    - pytables =3.10
+    - pytables =3.11
+    - python =3.11
     - pyxlsb =1.0
     - rasterio =1.4
-    - requests =2.32
+    - requests =2.34
     - rtree =1.4
     - salib =1.5
-    - scikit-learn =1.7
-    - scipy =1.15
+    - scikit-learn =1.9
+    - scipy =1.17
     - seaborn =0.13
-    - sparse =0.17
-    - statsmodels =0.14
-    - tabulate =0.9
-    - tqdm =4.67
+    - sparse =0.19
+    - statsmodels =0.15
+    - tabulate =0.10
+    - tqdm =4.70
     - unittest-xml-reporting =3.2
-    - xarray =2025.6
+    - xarray =2026.7
     - xlrd =2.0
     - xlsxwriter =3.2
 
@@ -79,6 +79,7 @@ test:
     - pip check
     - python3 -m unittest climada.engine.test.test_impact
   requires:
+    - lxml
     - pip
     - python {{ python_min }}
 
